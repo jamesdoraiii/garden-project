@@ -1,7 +1,7 @@
 
-<form [formGroup]= "loginInfo" (ngSubmit) = "onAdminLogin()">
-  <label for = "adminEmail">Admin Email:</label>
-  <input type = "text" name = "adminEmail" required formControlName = "adminEmail">
+<form *ngIf = "token === ''" [formGroup]= "loginInfo" (ngSubmit) = "onAdminLogin()">
+  <label for = "email">Admin Email:</label>
+  <input type = "text" name = "email" required formControlName = "email">
 
   <label for = "password">Password:</label>
   <input type = "text" name = "password" required formControlName = "password">
@@ -9,3 +9,9 @@
   <button type = "submit">Login</button>
 
 </form>
+
+<div *ngIf = "token != ''">
+  <button (click)="logout()">Logout</button>
+  <app-adminproductspage [token] = "token"></app-adminproductspage>
+</div>
+

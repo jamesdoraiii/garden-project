@@ -15,6 +15,7 @@ import { LoginService } from './login.service';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DisplayproductsComponent } from './displayproducts/displayproducts.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { DisplayproductsComponent } from './displayproducts/displayproducts.comp
     ProductspageComponent,
     AdminloginpageComponent,
     AdminproductspageComponent,
-    DisplayproductsComponent
+    DisplayproductsComponent,
+<<<<<<< HEAD
+=======
+    ContactComponent
+>>>>>>> stl
   ],
   imports: [
     BrowserModule,
