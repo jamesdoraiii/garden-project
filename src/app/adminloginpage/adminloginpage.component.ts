@@ -10,6 +10,8 @@ import { LoginService } from '../login.service';
 export class AdminloginpageComponent implements OnInit {
 
   loginInfo: FormGroup;
+  response: any;
+  token = ''
 
   constructor(private fb: FormBuilder, private loginService: LoginService) { }
 
@@ -21,7 +23,16 @@ export class AdminloginpageComponent implements OnInit {
   }
 
   onAdminLogin() : void {
-    console.log("test")
+    console.log(this.loginInfo.value);
+    
+    this.loginService.adminLogin(this.loginInfo.value).subscribe(Response => {
+      this.token = Response.token
+      console.log(this.token)
+    })
+  }
+
+  logout() : void {
+    this.token = ''
   }
 
 }

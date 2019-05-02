@@ -24,7 +24,7 @@ import { DisplayproductsComponent } from './displayproducts/displayproducts.comp
     ProductspageComponent,
     AdminloginpageComponent,
     AdminproductspageComponent,
-    DisplayproductsComponent
+    DisplayproductsComponent,
   ],
   imports: [
     BrowserModule,

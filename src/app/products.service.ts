@@ -20,4 +20,17 @@ export class ProductsService {
   getProducts() : Observable<any> {
     return this.http.get<any>(this.dbUrl);
   }
+
+  deleteProduct(productid, token) : Observable<any> {
+
+    const httpOptionsDelete = {
+      headers: new HttpHeaders({
+        'Content-Type' : 'application/json',
+        'Authorization' : token
+      })
+    }
+
+
+    return this.http.delete<any>(this.dbUrl + "/" + productid, httpOptionsDelete)
+  }
 }
