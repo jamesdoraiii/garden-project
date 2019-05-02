@@ -26,10 +26,7 @@ import { ContactComponent } from './contact/contact.component';
     AdminloginpageComponent,
     AdminproductspageComponent,
     DisplayproductsComponent,
-<<<<<<< HEAD
-=======
     ContactComponent
->>>>>>> stl
   ],
   imports: [
     BrowserModule,
