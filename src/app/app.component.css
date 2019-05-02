@@ -1,8 +1,21 @@
+body{
+    background-color: rgb(15, 0, 0);
+    
+}
+
+img{
+    width: 5em;
+    height: auto;
+    margin: auto;
+    float: left;
+
+}
 .nav{
     color: rgb(228, 190, 87);
     background-color: rgb(15, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    
 }
 
 .logo{
@@ -13,6 +26,10 @@
 
 a{
     margin: 35px;
+    padding: 20px;
+    font-size: 2em;
+    position: relative;
+   top: 15px;
 }
 
 a:link{

@@ -13,7 +13,7 @@ export class AdminproductspageComponent implements OnInit {
 
   products: any;
 
-  constructor(private productsService : ProductsService) { }
+  constructor(private productsService: ProductsService) { }
 
   ngOnInit() {
     this.getProducts();
@@ -27,13 +27,13 @@ export class AdminproductspageComponent implements OnInit {
   }
 
   deleteProduct(productid): void {
-  
+
     this.productsService.deleteProduct(productid, this.token).subscribe(Products => {
       console.log(Products)
       this.products = Products;
       this.getProducts();
     })
-    
+
   }
 
 }

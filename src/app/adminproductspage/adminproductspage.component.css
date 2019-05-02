@@ -1,0 +1,26 @@
+.deck{
+    display: inline-block;
+    color: rgb(228, 190, 87);
+    background-color: rgb(15, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    width: 30vw;
+    text-align: center;
+    
+}
+.cardContainer{
+    padding:1em 2em;
+}
+
+button{
+    display: inline-block;
+    color: rgb(228, 190, 87);
+    background-color: rgb(15, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 40px;
+    width: 80px;
+}
+h1{
+    color: rgb(228, 190, 87);
+}

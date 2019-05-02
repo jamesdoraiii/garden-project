@@ -1,8 +1,8 @@
 <h1>Admin Products View</h1>
 
-<div *ngFor = "let product of products">
 
-    <app-displayproducts [product] = "product"></app-displayproducts>
-    <button (click) = "deleteProduct(product.id)">Delete {{ product.product_name }}</button>
-    <hr>
+<div *ngFor="let product of products">
+
+    <app-displayproducts [product]="product"></app-displayproducts>
+    <button (click)="deleteProduct(product.id)">Delete {{ product.product_name }}</button>
 </div>
