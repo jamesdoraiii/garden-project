@@ -1,3 +1,11 @@
-<p>
-  adminloginpage works!
-</p>
+
+<form [formGroup]= "loginInfo" (ngSubmit) = "onAdminLogin()">
+  <label for = "adminEmail">Admin Email:</label>
+  <input type = "text" name = "adminEmail" required formControlName = "adminEmail">
+
+  <label for = "password">Password:</label>
+  <input type = "text" name = "password" required formControlName = "password">
+
+  <button type = "submit">Login</button>
+
+</form>

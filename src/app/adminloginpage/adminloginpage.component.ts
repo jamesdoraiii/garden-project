@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormControl} from '@angular/forms';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-adminloginpage',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminloginpageComponent implements OnInit {
 
-  constructor() { }
+  loginInfo: FormGroup;
+
+  constructor(private fb: FormBuilder, private loginService: LoginService) { }
 
   ngOnInit() {
+    this.loginInfo = this.fb.group({
+      email: new FormControl(),
+      password: new FormControl()
+    })
+  }
+
+  onAdminLogin() : void {
+    console.log("test")
   }
 
 }
