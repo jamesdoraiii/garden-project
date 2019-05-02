@@ -1,0 +1,26 @@
+.nav{
+    color: rgb(228, 190, 87);
+    background-color: rgb(15, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.logo{
+    float: left;
+    height: 5%;
+    width: 5%;
+}
+
+a{
+    margin: 35px;
+}
+
+a:link{
+    color: rgb(228, 190, 87);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(228, 190, 87);
+}
+
